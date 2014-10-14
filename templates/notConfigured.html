@@ -1,0 +1,53 @@
+<?php 
+
+require_once(dirname(__FILE__) . '/parts/header.html');
+
+?>
+
+
+
+<div class="jumbotron">
+	<h1>Setup <br/>Feide Connect</h1>
+	<p class="lead">Your Feide Connect client is not yet properly configured.</p>
+	<p>You would need to take two steps. Register your client at the Feide Connect Developer dashboard, and then configured your client credentials in the local <tt>etc/config.php</tt> configuration file.</p>
+
+	<p><a class="btn btn-success" target="_blank" href="https://dev.uwap.uninettlabs.no" role="button">Register at Feide Connect Developer dashboard</a></p>
+
+	<p>When registering your client, you should use the following redirect_uri value:	</p>
+
+	<pre><code><?php echo htmlentities($data['redirect_uri']); ?></code></pre>
+
+</div>
+
+<!-- <div class="row marketing">
+	<div class="col-lg-6">
+		<h4>Subheading</h4>
+		<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+		<h4>Subheading</h4>
+		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+		<h4>Subheading</h4>
+		<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+	</div>
+
+	<div class="col-lg-6">
+		<h4>Subheading</h4>
+		<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+		<h4>Subheading</h4>
+		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+		<h4>Subheading</h4>
+		<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+	</div>
+</div>
+ -->
+
+<?php
+
+require_once(dirname(__FILE__) . '/parts/footer.html');
+
+
+
+

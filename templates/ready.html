@@ -1,0 +1,36 @@
+<?php 
+
+require_once(dirname(__FILE__) . '/parts/header.html');
+
+?>
+
+<div class="jumbotron">
+
+	<h1>Ready!</h1>
+	<p class="lead">You are properly configured, but have not yet obtained an access token. Go ahead!</p>
+
+	<p style="margin-top: 3em">
+		<a class="btn btn-xs btn-success" href="?login=1" role="button">Login</a>
+	</p>
+
+</div>
+
+<div class="row">
+	<div class="col-lg-12">
+
+
+		<h4>Your local configuration</h4>
+		<pre><code><?php echo (json_encode($data['config'], JSON_PRETTY_PRINT)); ?></code></pre>
+
+	</div>
+
+</div>
+
+
+<?php
+
+require_once(dirname(__FILE__) . '/parts/footer.html');
+
+
+
+

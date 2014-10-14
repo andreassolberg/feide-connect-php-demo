@@ -1,0 +1,46 @@
+<?php 
+
+require_once(dirname(__FILE__) . '/parts/header.html');
+
+?>
+
+<div class="jumbotron">
+
+	<h1>Eksamensdata</h1>
+	<p class="lead">Gratulerer! Du har nå satt opp en ny PHP klient som har fått autorisert tilgang til FS sitt API for eksamensresultater, og har fått hentet ut data derfra på vegne av en sluttbruker som er autentisert med Feide.</p>
+	<p>(Og det var ikke mange linjene med kode ;)</p>
+
+	<pre style="text-align: left"><code><?php echo (json_encode($data['eksamensdata'], JSON_PRETTY_PRINT)); ?></code></pre>
+	
+
+	<p style="margin-top: 3em">
+		<a class="btn btn-xs btn-warning" style="padding: .3em; font-size: 60%" href="?reset=1" role="button">Reset session</a>
+		<a class="btn btn-xs btn-success" style="padding: .3em; font-size: 60%" href="?" role="button">Refresh page</a>
+	</p>
+
+</div>
+
+<div class="row">
+	<div class="col-lg-12">
+
+		<h4>Feide Connect User info</h4>
+		<pre><code><?php echo (json_encode($data['userinfo'], JSON_PRETTY_PRINT)); ?></code></pre>
+
+		<h4>Obtained OAuth 2.0 Access Token</h4>
+		<pre><code><?php echo (json_encode($data['token'], JSON_PRETTY_PRINT)); ?></code></pre>
+
+		<h4>Your local configuration</h4>
+		<pre><code><?php echo (json_encode($data['config'], JSON_PRETTY_PRINT)); ?></code></pre>
+
+	</div>
+
+</div>
+
+
+<?php
+
+require_once(dirname(__FILE__) . '/parts/footer.html');
+
+
+
+
