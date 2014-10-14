@@ -84,7 +84,7 @@ Når appen klarer å hente ut eksamensresultater er man i mål! Gratulerer!
 
 All kode av betydning og interesse ligger i `lib/FeideConnect.php`. Her finner du en komplett implementasjon av OAuth 2.0 consumer uten eksterne avhengigheter.
 
-* [Studer kildekoden for lib/FeideConnect.php her](http://github.com/andreassolberg/.....)
+* [Studer kildekoden for lib/FeideConnect.php her](https://github.com/andreassolberg/feide-connect-php-demo/blob/master/lib/FeideConnect.php)
 
 Filen `index.php` styrer logikken for selve applikasjonen, og laster f.eks. inn konfigurasjon fra `etc/config.php`.
 
