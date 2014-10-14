@@ -1,10 +1,7 @@
 <?php
 
 require_once('./lib/FeideConnect.php');
-require_once('./lib/misc.php');
 require_once('./etc/config.php');
-
-
 
 class App {
 
